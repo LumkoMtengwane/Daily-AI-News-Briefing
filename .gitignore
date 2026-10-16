@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+.trigger/
+dist/
+*.log
+*.json.key
+service-account*.json
+CLAUDE.md
+docs/tracking.md

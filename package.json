@@ -1,0 +1,29 @@
+{
+  "name": "ai-news-research-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "description": "Scheduled research assistant: finds the day's important AI news and logs it to a Google Sheet. Runs on Trigger.dev.",
+  "type": "module",
+  "scripts": {
+    "dev": "trigger dev",
+    "deploy": "trigger deploy",
+    "local": "tsx --env-file=.env src/local.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
+    "@googleapis/sheets": "^13.0.2",
+    "@trigger.dev/sdk": "4.7.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "trigger.dev": "4.7.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}
